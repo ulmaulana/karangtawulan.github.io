@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produk Nelayan - Pantai Karang Tawulan</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/produk-nelayan.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <span>Pantai</span> Karang Tawulan
+        </a>
+      </div>
+      <nav id="nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="destinasi.html">Destinasi</a></li>
+          <li><a href="paket-wisata.html">Paket Wisata</a></li>
+          <li><a href="produk-nelayan.html" class="active">Produk Nelayan</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="tentang-kami.html">Tentang Kami</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="banner-content">
+        <h1>Produk Nelayan</h1>
+        <p>Olahan laut segar dan berkualitas langsung dari nelayan Karang Tawulan</p>
+      </div>
+      <div class="wave-container">
+        <div class="wave"></div>
+      </div>
+    </section>
+
+    <div class="shop-container container">
+      <aside class="shop-sidebar">
+        <div class="filter-controls">
+          <h3>Filter Produk</h3>
+          <div class="filter-buttons" id="filterButtons">
+            <button class="filter-btn active" data-category="all">Semua</button>
+            <button class="filter-btn" data-category="fresh">Segar</button>
+            <button class="filter-btn" data-category="processed">Olahan</button>
+            <button class="filter-btn" data-category="craft">Kerajinan</button>
+          </div>
+        </div>
+        <!-- Filter tambahan seperti harga, ketersediaan, dan pencarian -->
+        <div class="filter-group">
+          <label for="searchProduct">Cari Produk</label>
+          <input type="text" id="searchProduct" placeholder="Cari nama produk...">
+        </div>
+        <div class="filter-group">
+          <label for="priceRange">Harga Maksimal</label>
+          <input type="range" id="priceRange" min="0" max="300000" step="5000">
+          <span id="priceValue">Rp 300.000</span>
+        </div>
+      </aside>
+      <section class="shop-main">
+        <div class="products-intro">
+          <div class="intro-content">
+            <h2>Hasil Laut Berkualitas</h2>
+            <p>Produk nelayan Karang Tawulan dikenal dengan kualitas dan kesegaran yang terjaga. Para nelayan lokal menangkap ikan dengan cara tradisional yang ramah lingkungan dan mengolah hasil tangkapan dengan resep turun-temurun.</p>
+            <p>Untuk pemesanan produk, Anda dapat langsung menghubungi kami melalui WhatsApp di nomor <strong>+62 812-3456-7890</strong> atau mengunjungi toko oleh-oleh di kawasan Pantai Karang Tawulan.</p>
+          </div>
+        </div>
+        <div class="products-list grid" id="productsList">
+          <!-- Kategori: Segar -->
+          <div class="product-item" data-category="fresh">
+            <div class="product-image">
+              <img src="https://www.sentraikanlaut.com/assets/ikanlaut-segar-vs-ikan-laut-frozen.webp" alt="Ikan Laut Segar" />
+            </div>
+            <div class="product-details">
+              <h3>Ikan Laut Segar</h3>
+              <div class="product-meta">
+                <span class="product-price">Rp 50.000 - 120.000 / kg</span>
+                <span class="product-category">Kategori: Segar</span>
+              </div>
+              <p class="product-description">Berbagai jenis ikan laut segar hasil tangkapan nelayan Karang Tawulan. Tersedia berbagai ukuran dan jenis ikan tergantung musim penangkapan.</p>
+              <p class="product-availability">Ketersediaan: Setiap hari (pagi)</p>
+              <div class="product-action">
+                <a href="https://wa.me/628123456789?text=Halo,%20saya%20tertarik%20dengan%20produk%20Ikan%20Laut%20Segar" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Pesan Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item" data-category="fresh">
+            <div class="product-image">
+              <img src="https://siopen.hulusungaiselatankab.go.id/storage/merchant/products/2022/03/16/webp/11f5ef9e0c9f0dfaad45e37b0a5b6eba.webp" alt="Udang Segar" />
+            </div>
+            <div class="product-details">
+              <h3>Udang Segar</h3>
+              <div class="product-meta">
+                <span class="product-price">Rp 80.000 - 150.000 / kg</span>
+                <span class="product-category">Kategori: Segar</span>
+              </div>
+              <p class="product-description">Udang segar dengan berbagai ukuran yang baru ditangkap oleh nelayan. Dijamin fresh dan berkualitas tinggi.</p>
+              <p class="product-availability">Ketersediaan: Selasa, Kamis, Sabtu (pagi)</p>
+              <div class="product-action">
+                <a href="https://wa.me/628123456789?text=Halo,%20saya%20tertarik%20dengan%20produk%20Udang%20Segar" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Pesan Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kategori: Olahan -->
+          <div class="product-item" data-category="processed">
+            <div class="product-image">
+              <img src="https://asset-2.tstatic.net/banyumas/foto/bank/images/ikan-asap-kota-tegal-2.jpg" alt="Ikan Asap" />
+            </div>
+            <div class="product-details">
+              <h3>Ikan Asap</h3>
+              <div class="product-meta">
+                <span class="product-price">Rp 60.000 - 85.000 / kg</span>
+                <span class="product-category">Kategori: Olahan</span>
+              </div>
+              <p class="product-description">Ikan yang diolah dengan metode pengasapan tradisional menggunakan kayu khusus sehingga menghasilkan aroma dan rasa yang khas. Tahan hingga 7 hari pada suhu ruangan.</p>
+              <p class="product-availability">Ketersediaan: Setiap hari</p>
+              <div class="product-action">
+                <a href="https://wa.me/628123456789?text=Halo,%20saya%20tertarik%20dengan%20produk%20Ikan%20Asap" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Pesan Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item" data-category="processed">
+            <div class="product-image">
+              <img src="https://www.amartha.com/_next/image/?url=https%3A%2F%2Faccess.amartha.com%2Fuploads%2Fpeluang_usaha_keripik_rumput_laut_yang_sehijau_rumput_tetangga_eb3a14a20e.png&w=828&q=75" alt="Kerupuk Rumput Laut" />
+            </div>
+            <div class="product-details">
+              <h3>Kerupuk Rumput Laut</h3>
+              <div class="product-meta">
+                <span class="product-price">Rp 25.000 / 250gr</span>
+                <span class="product-category">Kategori: Olahan</span>
+              </div>
+              <p class="product-description">Camilan renyah berbahan dasar rumput laut yang diolah dengan bumbu tradisional. Tersedia dalam beberapa varian rasa: original, pedas, dan bawang.</p>
+              <p class="product-availability">Ketersediaan: Setiap hari</p>
+              <div class="product-action">
+                <a href="https://wa.me/628123456789?text=Halo,%20saya%20tertarik%20dengan%20produk%20Kerupuk%20Rumput%20Laut" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Pesan Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item" data-category="processed">
+            <div class="product-image">
+              <img src="https://asset-2.tstatic.net/batam/foto/bank/images/ikan-teri.jpg" alt="Ikan Teri Kering" />
+            </div>
+            <div class="product-details">
+              <h3>Ikan Teri Kering</h3>
+              <div class="product-meta">
+                <span class="product-price">Rp 40.000 / 250gr</span>
+                <span class="product-category">Kategori: Olahan</span>
+              </div>
+              <p class="product-description">Ikan teri pilihan yang dikeringkan dengan cara tradisional di bawah sinar matahari. Cocok untuk berbagai olahan masakan rumahan.</p>
+              <p class="product-availability">Ketersediaan: Setiap hari</p>
+              <div class="product-action">
+                <a href="https://wa.me/628123456789?text=Halo,%20saya%20tertarik%20dengan%20produk%20Ikan%20Teri%20Kering" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Pesan Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kategori: Kerajinan -->
+          <div class="product-item" data-category="craft">
+            <div class="product-image">
+              <img src="https://bangkatengahkab.go.id/asset/foto_statis/Kerajinan_Kerang.jpg" alt="Kerajinan Kerang" />
+            </div>
+            <div class="product-details">
+              <h3>Kerajinan Kerang</h3>
+              <div class="product-meta">
+                <span class="product-price">Rp 35.000 - 150.000</span>
+                <span class="product-category">Kategori: Kerajinan</span>
+              </div>
+              <p class="product-description">Berbagai kerajinan tangan dari kerang yang dibuat oleh pengrajin lokal Karang Tawulan. Tersedia dalam bentuk gantungan kunci, hiasan dinding, kotak perhiasan, dan lainnya.</p>
+              <p class="product-availability">Ketersediaan: Setiap hari</p>
+              <div class="product-action">
+                <a href="https://wa.me/628123456789?text=Halo,%20saya%20tertarik%20dengan%20produk%20Kerajinan%20Kerang" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Pesan Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item" data-category="craft">
+            <div class="product-image">
+              <img src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/1/20/36d5cecf-1001-439f-9e76-988fcc06a1b0.jpg.webp?ect=4g" alt="Hiasan Kapal Miniatur" />
+            </div>
+            <div class="product-details">
+              <h3>Hiasan Kapal Miniatur</h3>
+              <div class="product-meta">
+                <span class="product-price">Rp 85.000 - 250.000</span>
+                <span class="product-category">Kategori: Kerajinan</span>
+              </div>
+              <p class="product-description">Miniatur perahu nelayan tradisional yang dibuat dengan detail dan keahlian tinggi. Terbuat dari kayu dengan ukuran dan tingkat kerumitan yang bervariasi.</p>
+              <p class="product-availability">Ketersediaan: Setiap hari</p>
+              <div class="product-action">
+                <a href="https://wa.me/628123456789?text=Halo,%20saya%20tertarik%20dengan%20produk%20Hiasan%20Kapal%20Miniatur" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Pesan Sekarang</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="cta-section container">
+      <div class="cta-content">
+        <h2>Ingin Melihat Proses Pembuatan?</h2>
+        <p>Kunjungi kami dan saksikan langsung bagaimana nelayan lokal mengolah hasil tangkapan mereka menjadi produk-produk berkualitas.</p>
+        <a href="paket-wisata.html" class="btn btn-primary">Lihat Paket Wisata</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Pantai Karang Tawulan</h3>
+            <p>Temukan pesona pantai selatan Jawa Barat dengan keindahan tebing karang dan pantai yang masih asri.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="social-icon facebook"></i></a>
+              <a href="#" aria-label="Instagram"><i class="social-icon instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="social-icon twitter"></i></a>
+              <a href="#" aria-label="YouTube"><i class="social-icon youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Tautan</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="destinasi.html">Destinasi</a></li>
+              <li><a href="paket-wisata.html">Paket Wisata</a></li>
+              <li><a href="produk-nelayan.html">Produk Nelayan</a></li>
+              <li><a href="galeri.html">Galeri</a></li>
+              <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Kontak</h3>
+            <p>Kampung Cimanuk, Desa Kalapagenep,<br />Kecamatan Cikalong,<br />Kabupaten Tasikmalaya, Jawa Barat</p>
+            <p>Email: info@karangtawulan.id</p>
+            <p>WhatsApp: +62 812-3456-7890</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Pantai Karang Tawulan. Hak Cipta Dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>
